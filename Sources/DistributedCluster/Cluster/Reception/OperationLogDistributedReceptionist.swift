@@ -485,7 +485,7 @@ extension OpLogDistributedReceptionist {
         self.flushTimerTasks[timerTaskKey] = Task { [weak self] in
             defer {
                 if let __secretlyKnownToBeLocal = self {
-                    __secretlyKnownToBeLocal.flushTimerTasks.removeValue(forKey: timerTaskKey)
+                    // __secretlyKnownToBeLocal.flushTimerTasks.removeValue(forKey: timerTaskKey)
                 }
             }
 
